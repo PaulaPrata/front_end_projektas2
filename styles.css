@@ -3,7 +3,7 @@
   }
   
   html {
-    font: 1.2em/1.4 Arial, Helvetica, sans-serif;
+    font: 1.2em/1.4 "Dosis", sans-serif;
   }
   
   body {
@@ -11,27 +11,48 @@
   }
   
   header {
-    background-color: #333;
-    color: #fff;
-    border: 5px solid #000;
+    background-color: white;
+    border: 5px}
+  
+  header div {
+    position: center;
+    color: #cabdb8;
+    font-family: "Sofia", sans-serif;
+    font-size: 1.5em;
+  }
+
+
+  .logo-container {
+    padding: 0rem 4rem;
   }
   
+  .logo {
+    background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/Instagram-Pink-Logo-PNG.png);
+    background-size: cover;
+    object-position: center;
+    height: 3rem;
+    width: 3rem;
+    margin: 0;
+    padding: 0
+  }
+
   header ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
   
+
   header a {
-    color: #fff;
+    color: #cabdb8;
     text-decoration: none;
     display: block;
     padding: 0.5em 1em;
     border-top: 1px solid #999;
   }
-  
+
   header a:hover {
-    color: #fff;
+    color: #0ff1ce;
     text-decoration: none;
     display: block;
     padding: 0.5em 1em;
@@ -54,31 +75,117 @@
     margin: 0;
     padding: 0;
   }
+
+  .cards .first {
+    background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/choco.jpeg);
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    /* justify-content: space-around; */
+
+  }
+
+  .cards .second {
+    background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/Bananacupcakes.jpeg);
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+    .cards .third{
+      background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/caramelchococake.jpeg);
+      background-size: cover;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .cards .fourth{
+      background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/Beetrootbrownie.jpeg);
+      background-size: cover;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .cards .fifth{
+      background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/applepie.jpeg);
+      background-size: cover;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .cards .sixth{
+      background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/chocolatechipcookies.jpeg);
+      background-size: cover;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
   
   .cards li {
-    border: 5px solid #000;
     margin-bottom: 1em;
   }
   
   .cards h2 {
-    background-color: #333;
+    background-color: #cabdb8;
     color: #fff;
     margin: 0;
+    padding: 0;
     padding: 0.5em 1em;
   }
-  
-  .cards .inner {
-    padding: 0.5em 1em;
-  }
+
   
   .sidebar {
-    background-color: #333;
-    border: 5px solid #000;
+    background-color:#cabdb8;
+    border: 5px solid;
     padding: 0.5em 1em;
     color: #fff;
+    display: block;
+   
   }
+
+  .sidebar ol {
+    list-style: none;
+    margin: 0;
+    top:10em;
+    padding: 1em 1em;
+
+  }
+
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em 1em;
+  }
+  .sidebar a:hover {
+    color: #0ff1ce;
+
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    padding:  0.5em;
+    background-color: #cabdb8;
+    color: #fff;
+}
   
-  @media screen and (min-width: 60em) {
+  @media screen and (min-width: 767px) {
     header {
       display: flex; /* separate the nav and title */
       justify-content: space-between;
@@ -104,5 +211,29 @@
       display: grid; /* a three column layout for the cards */
       grid-template-columns: 1fr 1fr 1fr;
       gap: 20px;
+ 
+    }
+    .cards .first {
+      display: grid; /* a three column layout for the cards */
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+     
+    }
+
+
+    .sidebar{
+      display: grid; /* a three column layout for the cards */
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+
+
+    }
+    .footer{
+      display: grid; /* a three column layout for the cards */
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+
+
     }
   }
+    
