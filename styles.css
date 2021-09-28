@@ -1,239 +1,244 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    font: 1.2em/1.4 "Dosis", sans-serif;
-  }
-  
-  body {
-    padding: 0 0 1em;
-  }
-  
+  box-sizing: border-box;
+}
+
+html {
+  font: 1.2em/1.4 "Dosis", sans-serif;
+}
+
+body {
+  padding: 0 0 1em;
+}
+
+header {
+  background-color: white;
+  border: 5px;
+}
+
+header div {
+  background-position: center;
+  color: #cabdb8;
+  font-size: 1.5em;
+}
+article {
+  color: #b1a8a593;
+}
+
+.logo-container {
+  padding: 0rem 4rem;
+}
+
+.logo {
+  background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/Instagram-Pink-Logo-PNG.png);
+  background-size: cover;
+  object-position: center;
+  height: 3rem;
+  width: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header a {
+  color: #cabdb8;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em 1em;
+  /* border-top: 1px solid #999; */
+}
+
+header a:hover {
+  color: #0ff1ce;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em 1em;
+  /* border-top: 1px solid #999; */
+}
+
+header .title {
+  font-size: 150%;
+  font-style: italic;
+  font-weight: bold;
+  padding: 1em;
+}
+
+main {
+  padding: 0 1em;
+}
+
+.cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li div div {
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.cards .first {
+  background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/IMG_1879.jpeg);
+}
+
+.cards .second {
+  background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/sausekai.jpeg);
+}
+.cards .third {
+  background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/caramelchococake.jpeg);
+}
+
+.cards .fourth {
+  background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/Beetrootbrownie.jpeg);
+}
+
+.cards .fifth {
+  background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/applepie.jpeg);
+}
+
+.cards .sixth {
+  background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/chocolatechipcookies.jpeg);
+}
+
+.cards li {
+  margin-bottom: 1em;
+}
+
+.cards h2 {
+  background-color: #cabdb8;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  padding: 0.5em 1em;
+}
+
+.sidebar {
+  background-color: #cabdb8;
+  border: 5px solid;
+  padding: 0.5em 1em;
+  color: #fff;
+  display: block;
+}
+
+.sidebar ol {
+  list-style: none;
+  margin: 0;
+  top: 10em;
+  padding: 1em 1em;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em 1em;
+}
+
+.sidebar a:hover {
+  color: #0ff1ce;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  background-color: #cabdb8;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
   header {
-    background-color: white;
-    border: 5px}
-  
-  header div {
-    position: center;
-    color: #cabdb8;
-    font-family: "Sofia", sans-serif;
-    font-size: 1.5em;
-  }
-
-
-  .logo-container {
-    padding: 0rem 4rem;
-  }
-  
-  .logo {
-    background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/Instagram-Pink-Logo-PNG.png);
-    background-size: cover;
-    object-position: center;
-    height: 3rem;
-    width: 3rem;
-    margin: 0;
-    padding: 0
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   header ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    display: flex;
   }
-  
 
   header a {
-    color: #cabdb8;
-    text-decoration: none;
-    display: block;
-    padding: 0.5em 1em;
-    border-top: 1px solid #999;
+    border-top: none;
   }
 
-  header a:hover {
-    color: #0ff1ce;
-    text-decoration: none;
-    display: block;
-    padding: 0.5em 1em;
-    border-top: 1px solid #999;
-  }
-  
-  header .title {
-    font-size: 150%;
-    font-style: italic;
-    font-weight: bold;
-    padding: 1em;
-  }
-  
   main {
-    padding: 0 1em;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
   }
-  
+
   .cards {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
-  .cards .first {
-    background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/choco.jpeg);
+  ul li div div{
     background-size: cover;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    /* justify-content: space-around; */
-
   }
 
-  .cards .second {
-    background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/Bananacupcakes.jpeg);
-    background-size: cover;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  }
-    .cards .third{
-      background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/caramelchococake.jpeg);
-      background-size: cover;
-      height: 50vh;
-      display: flex;
-      align-items: center;
-      margin: 0;
-      padding: 0;
-    }
-
-    .cards .fourth{
-      background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/Beetrootbrownie.jpeg);
-      background-size: cover;
-      height: 50vh;
-      display: flex;
-      align-items: center;
-      margin: 0;
-      padding: 0;
-    }
-
-    .cards .fifth{
-      background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/applepie.jpeg);
-      background-size: cover;
-      height: 50vh;
-      display: flex;
-      align-items: center;
-      margin: 0;
-      padding: 0;
-    }
-
-    .cards .sixth{
-      background-image: url(/Users/paulapr./PycharmProjects/front_end_projektas/img/chocolatechipcookies.jpeg);
-      background-size: cover;
-      height: 50vh;
-      display: flex;
-      align-items: center;
-      margin: 0;
-      padding: 0;
-    }
-  
-  .cards li {
-    margin-bottom: 1em;
-  }
-  
-  .cards h2 {
-    background-color: #cabdb8;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    padding: 0.5em 1em;
-  }
-
-  
   .sidebar {
-    background-color:#cabdb8;
-    border: 5px solid;
-    padding: 0.5em 1em;
-    color: #fff;
-    display: block;
-   
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
-  .sidebar ol {
-    list-style: none;
-    margin: 0;
-    top:10em;
-    padding: 1em 1em;
-
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
   }
-
-  .sidebar a {
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    padding: 1em 1em;
-  }
-  .sidebar a:hover {
-    color: #0ff1ce;
-
-  }
-  footer {
-    display: flex;
-    justify-content: center;
-    padding:  0.5em;
-    background-color: #cabdb8;
-    color: #fff;
 }
-  
-  @media screen and (min-width: 767px) {
+
+  @media screen and (min-width: 1281px) {
     header {
-      display: flex; /* separate the nav and title */
+      display: flex;
       justify-content: space-between;
       align-items: center;
     }
   
     header ul {
-      display: flex; /* navigation display using flexbox */
+      display: flex;
     }
   
     header a {
-      border: 0; /*remove the border used in the mobile design */
+      border-top: none;
     }
   
     main {
-    display: grid; /* a two column grid layout for the main content and sidebar */
-    grid-template-columns: 3fr 1fr;
-    gap: 20px;
-    margin-top: 20px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 20px;
+      margin-top: 20px;
     }
   
     .cards {
-      display: grid; /* a three column layout for the cards */
+      display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 20px;
- 
     }
-    .cards .first {
-      display: grid; /* a three column layout for the cards */
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 20px;
-     
+    ul li div div{
+      background-size: cover;
     }
-
-
-    .sidebar{
-      display: grid; /* a three column layout for the cards */
-      grid-template-columns: 1fr 1fr 1fr;
+  
+    .sidebar {
+      display: grid;
+      grid-template-columns: 1fr;
       gap: 20px;
-
-
     }
-    .footer{
-      display: grid; /* a three column layout for the cards */
-      grid-template-columns: 1fr 1fr 1fr;
+  
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 20px;
-
-
     }
   }
-    
